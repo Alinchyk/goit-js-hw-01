@@ -21,10 +21,10 @@ const totalPrice = quantity * pricePerDroid;
 if (totalPrice > credits) {
   message = "Недостатньо коштів на рахунку!";
 }
-if (totalPrice < credits)
-  message = `Ви купили ${quantity} дроїдів, на рахунку залишилося ${
-    credits - totalPrice
-  } кредитів.`;
+
+if (totalPrice < credits) {
+  message = `Ви купили ${quantity} дроїдів, на рахунку залишилося ${credits - totalPrice} кредитів.`;
+}
 
 if (quantity === null) {
   message = " ";
